@@ -1,10 +1,15 @@
-.container {
-display: grid;
-background-color: purple;
-.navbar{
-grid-template-rows: 150px 150px 150px;
-grid-template-columns: 150px }
+.sidebar {
+    grid-area: 1/1/4/2; /* Updated column end to 2 */
+}
 
+.navbar {
+    grid-area: 1/2/4/4; /* Adjusted row start to 1 and column start to 2 */
+}
 
+.tweets {
+    grid-area: 3/1/4/4; /* Adjusted row start to 3 and column start to 1 */
+}
 
+.news {
+    grid-area: 2/1/3/4; /* Adjusted row start to 2, row end to 3, and column end to 4 */
 }
